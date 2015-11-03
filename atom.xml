@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Jason Huang's Blog]]></title>
+  <subtitle><![CDATA[To live as a monster or to die as a good man?]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-11-02T05:17:05.848Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[Jason Huang]]></name>
+    <email><![CDATA[huangmianrui0310@sina.com]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[说说因果]]></title>
+    <link href="http://yoursite.com/2015/11/02/the-first-post/"/>
+    <id>http://yoursite.com/2015/11/02/the-first-post/</id>
+    <published>2015-11-02T05:06:48.000Z</published>
+    <updated>2015-11-02T05:17:05.848Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>如是因，如是果。昨日因，今日果。</p>
+</blockquote>
+<p>或许因果是最让人看不穿、悟不破的一种关系。</p>
+<p>滚滚红尘中，六道轮回里，多得是执着的人。</p>
+<p>其实，道与佛，两者关于因果的看法是很相近的。</p>
+<p>老子说：</p>
+<blockquote>
+<p>道常无为。</p>
+</blockquote>
+<p>而佛教是这样说的：</p>
+<blockquote>
+<p>一切有为法，如梦幻泡影，如露亦如电，应作如是观。</p>
+</blockquote>
+<p>其实这两者都表达了同一种说法，那就是过去的因注定了你今日的果，任何力量、任何事情、任何作为都改变不了这一因果关系。</p>
+<p>这样想想的话，人生岂不很是无趣？</p>
+<p>不然。</p>
+<blockquote>
+<p>今日果随前因定，今日因定来日果。</p>
+</blockquote>
+<p>说到这里，我又想起了八个字：</p>
+<blockquote>
+<p>菩萨怕因，凡人怕果</p>
+</blockquote>
+<p>为何这么说呢？我是这样理解的：</p>
+<p>前因已定，再去强为也只是徒劳无功，倒不如努力避免种下因，方可免收来日果。</p>
+<p>道德经也说，圣人无为。</p>
+<p>但是菩萨、圣人可以无为，我们却不能每天都无所事事。这种不叫无为，而是堕落。</p>
+<p>凡人的无为不是无所作为，而是有所不为，因为有所不为而后可以有为。</p>
+<p>凡人因为不知前因种下时是好是坏，所以便竭尽手段去避免恶果的到来，岂不知又种下了一番恶因，来日又有一场恶果。</p>
+<p>我觉得，即使因果前定，我们也要学会有所不为。</p>
+<p>有所不为才能够避免种下恶因，学会自律方能够获得善果。人贵有自知之明，知晓自己的欲望并牢牢控制它的人才能有大作为。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>如是因，如是果。昨日因，今日果。</p>
+</blockquote>
+<p>或许因果是最让人看不穿、悟不破的一种关系。</p>
+<p>滚滚红尘中，六道轮回里，多得是执着的人。</p>
+<p>其实，道与佛，两者关于因果的看法是很相近的。</p>
+<p]]>
+    </summary>
+    
+      <category term="Article" scheme="http://yoursite.com/tags/Article/"/>
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+  </entry>
+  
+</feed>
