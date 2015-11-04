@@ -4,7 +4,7 @@
   <subtitle><![CDATA[To live as a monster or to die as a good man?]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-04T15:40:35.688Z</updated>
+  <updated>2015-11-04T15:45:33.029Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2015/11/04/the-third-post/"/>
     <id>http://yoursite.com/2015/11/04/the-third-post/</id>
     <published>2015-11-04T15:12:50.000Z</published>
-    <updated>2015-11-04T15:40:35.688Z</updated>
+    <updated>2015-11-04T15:45:33.029Z</updated>
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>促狭刺耳的笑声在无人的山谷里一遍又一遍地回荡着，“嘻嘻嘻嘻……”，而后，更是变成了桀骜不驯的狂笑声，“哈哈哈哈……”，不禁令人有种恶魔复苏的恐惧感。</p><br>——极脑虫的苏醒</blockquote>
 
 <blockquote class="blockquote-center"><p>“吾乃普路图之王。吾等与尔人类属于同一星域，此前乃是星域监察者选定之继承者，可惜吾等因穷究真理的好奇心作祟，拥有了足以毁灭监察者，毁灭整个宇宙的力量。监察者为了消灭吾等毁灭者，竟不惜牺牲一名同伴，创造出了那如洪水般席卷整个普路图星球的虫族。虫族数量难以估计，且全部没有个体意识，只听从超脑虫的命令。而超脑虫则是由牺牲的那名监察者的大脑所孕育出来的，所以它只听从星域监察者们的命令。”</p><br>——普路图王的回忆</blockquote>
@@ -99,6 +99,8 @@
     
       <category term="Setting" scheme="http://yoursite.com/tags/Setting/"/>
     
+      <category term="setting" scheme="http://yoursite.com/categories/setting/"/>
+    
   </entry>
   
   <entry>
@@ -106,7 +108,7 @@
     <link href="http://yoursite.com/2015/11/04/the-second-post/"/>
     <id>http://yoursite.com/2015/11/04/the-second-post/</id>
     <published>2015-11-04T15:04:45.000Z</published>
-    <updated>2015-11-04T15:14:03.029Z</updated>
+    <updated>2015-11-04T15:45:34.400Z</updated>
     <content type="html"><![CDATA[<p>人类的存在，本身就是混乱的本源。</p>
 <p>每个人的内心都有一头张牙舞爪的混乱之兽。倘若没有牢固的铁牢囚禁，那么混乱将会随着降临。</p>
 <p>信仰是束缚混乱之兽的锁链，只有找到自己的信仰，混乱才会转化善良。</p>
@@ -124,6 +126,8 @@
       <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
     
       <category term="movie" scheme="http://yoursite.com/tags/movie/"/>
+    
+      <category term="movie" scheme="http://yoursite.com/categories/movie/"/>
     
   </entry>
   
