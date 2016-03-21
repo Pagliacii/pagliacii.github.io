@@ -1,0 +1,1254 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}</style><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: false
+  },
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    equationNumbers: {
+      autoNumber: "AMS",
+    },
+    unicode: {
+      fonts: "STIXGeneral,'Arial Unicode MS'"
+    }
+  },
+  showProcessingMessages: false
+});
+</script>
+<title>Head First Java 要点</title></head><body><article class="markdown-body"><h2 id="head-first-java"><a name="user-content-head-first-java" href="#head-first-java" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Head First Java 要点</h2>
+<div class="toc">
+<ul>
+<li><a href="#head-first-java">Head First Java 要点</a><ul>
+<li><a href="#1">1. 基本概念</a></li>
+<li><a href="#2">2. 类与对象</a></li>
+<li><a href="#3-primitive">3. primitive主数据类型和引用</a></li>
+<li><a href="#4">4. 方法操作实例变量</a></li>
+<li><a href="#5">5. 编写程序</a></li>
+<li><a href="#6javaapi">6.认识Java的API</a></li>
+<li><a href="#7">7.继承与多态</a></li>
+<li><a href="#8">8.接口与多态</a></li>
+<li><a href="#9">9.构造器与垃圾收集器</a></li>
+<li><a href="#10">10.数字与静态</a></li>
+<li><a href="#11">11.异常处理</a></li>
+<li><a href="#12">12.图形用户接口</a></li>
+<li><a href="#13swing">13.运用Swing</a></li>
+<li><a href="#14">14.保存对象</a></li>
+<li><a href="#15">15.网络联机</a></li>
+<li><a href="#16">16.数据结构</a></li>
+<li><a href="#17">17.发布程序</a></li>
+<li><a href="#18">18.分布式计算</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="1"><a name="user-content-1" href="#1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1. 基本概念</h3>
+<ul>
+<li>
+<p>语句以分号结束。</p>
+</li>
+<li>
+<p>以两条斜线开始的行是注释。</p>
+</li>
+<li>
+<p>空格符通常无关紧要。</p>
+</li>
+<li>
+<p>程序块以{ }划出范围。</p>
+</li>
+<li>
+<p>用名称与类型声明变量。</p>
+</li>
+<li>
+<p>等号是赋值运算符。</p>
+</li>
+<li>
+<p>两个等号用来当等式等号运算符。</p>
+</li>
+<li>
+<p>只要条件测试结果为真，while循环就会一直执行块内的程序。</p>
+</li>
+<li>
+<p>把boolean测试放在括号中：</p>
+</li>
+</ul>
+<pre class="codehilite"><code class="language-java">while (x == 4) {}</code></pre>
+
+
+<h3 id="2"><a name="user-content-2" href="#2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2. 类与对象</h3>
+<ul>
+<li>
+<p>面向对象设计扩展功能不需改动之前已经测试好的程序代码。</p>
+</li>
+<li>
+<p>所有的Java程序都定义在类中。</p>
+</li>
+<li>
+<p>类如同蓝图描述该类型的对象要如何创建。</p>
+</li>
+<li>
+<p>对象自治：你无需在意它如何完成任务。</p>
+</li>
+<li>
+<p>对象有已知的事物，并能执行工作。</p>
+</li>
+<li>
+<p>对象本身已知道的事物称为实例变量，它代表对象的状态。</p>
+</li>
+<li>
+<p>对象可执行的动作称为方法，它代表对象的行为。</p>
+</li>
+<li>
+<p>创建类时，可能同时会需要创建独立、测试用的类。</p>
+</li>
+<li>
+<p>类可以继承自较为抽象的父类。</p>
+</li>
+<li>
+<p>Java的程序在执行期是一组会互相交谈的对象。</p>
+</li>
+</ul>
+<h3 id="3-primitive"><a name="user-content-3-primitive" href="#3-primitive" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3. primitive主数据类型和引用</h3>
+<ul>
+<li>
+<p>变量有两种：primitive主数据类型和引用</p>
+</li>
+<li>
+<p>变量的声明必须有类型和名称。</p>
+</li>
+<li>
+<p>primitive主数据类型变量值是该值的字节所表示的。</p>
+</li>
+<li>
+<p>引用变量的值代表位于堆之对象的存取方法。</p>
+</li>
+<li>
+<p>引用变量如同遥控器，对引用变量使用圆点运算符可以如同按下遥控器按钮般地存取它的方法或实例变量。</p>
+</li>
+<li>
+<p>没有引用到任何对象的引用变量的值为null值。</p>
+</li>
+<li>
+<p>数组一定是个对象，不管所声明的元素是否为primitive主数据类型，并且没有primitive主数据类型的数组，只有装载primitive主数据类型的数组。</p>
+</li>
+</ul>
+<h3 id="4"><a name="user-content-4" href="#4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4. 方法操作实例变量</h3>
+<ul>
+<li>
+<p>类定义对象所知及所为。</p>
+</li>
+<li>
+<p>对象所知者是实例变量。</p>
+</li>
+<li>
+<p>对象所为者是方法。</p>
+</li>
+<li>
+<p>方法可依据实例变量来展现不同的行为。</p>
+</li>
+<li>
+<p>方法可使用参数，这代表你可以传入一个或多个值给方法。</p>
+</li>
+<li>
+<p>传给方法的参数必须符合声明时的数量、顺序和类型。</p>
+</li>
+<li>
+<p>传入与传出方法的值类型可以隐含地放大或是明确地缩小。</p>
+</li>
+<li>
+<p>传给方法的参数值可以是直接指定的文字或数字（例如 2 或 &lsquo;e&rsquo; 等）或者是与所声明参数相同类型的变量（还有其他东西可以传给方法）。</p>
+</li>
+<li>
+<p>方法必须声明返回类型。使用void类型代表方法不返回任何东西。</p>
+</li>
+<li>
+<p>如果方法声明了非void的返回类型，那就一定要返回与声明类型相同的值。</p>
+</li>
+<li>
+<p>封装的基本原则：将实例变量标记为私有的，并提供共有的getter与setter来控制存取动作。</p>
+</li>
+</ul>
+<h3 id="5"><a name="user-content-5" href="#5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5. 编写程序</h3>
+<ul>
+<li>
+<p>Java程序应该从高层的设计开始。</p>
+</li>
+<li>
+<p>在创建新的类时通常会写出以下3种东西：伪代码、测试码和真实码。</p>
+</li>
+<li>
+<p>伪代码应该描述要做什么事情而不是如何做。</p>
+</li>
+<li>
+<p>使用伪代码来帮助测试码的设计。</p>
+</li>
+<li>
+<p>实现方法之前应该要编写测试码。</p>
+</li>
+<li>
+<p>如果知道要执行多少次，应该要使用for循环而不是while循环。</p>
+</li>
+<li>
+<p>使用前置或后置的递增为变量加1（比如 x++）。</p>
+</li>
+<li>
+<p>使用前置或后置的递减来对变量减1（比如 x&ndash;）。</p>
+</li>
+<li>
+<p>使用Integer.parseInt()来取得String的整数值。</p>
+</li>
+<li>
+<p>Integer.parseInt()只会在所给的String为数字时有作用。</p>
+</li>
+<li>
+<p>使用break命令来提前跳出循环。</p>
+</li>
+</ul>
+<h3 id="6javaapi"><a name="user-content-6javaapi" href="#6javaapi" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6.认识Java的API</h3>
+<ul>
+<li>
+<p>ArrayList是个Java API的类。</p>
+</li>
+<li>
+<p>使用add()来新增ArrayList的元素。</p>
+</li>
+<li>
+<p>使用remove()来删除ArrayList中的元素。</p>
+</li>
+<li>
+<p>要寻找某项元素的位置，使用indexOf()。</p>
+</li>
+<li>
+<p>使用isEmpty()来判别ArrayList是否为空。</p>
+</li>
+<li>
+<p>要取得ArrayList的大小，可以使用size()方法。</p>
+</li>
+<li>
+<p>传统的数组可以用length这个变量取得大小。</p>
+</li>
+<li>
+<p>ArrayList会自动地调整大小。</p>
+</li>
+<li>
+<p>你可以用参数类型来声明数组内容的类型，例如ArrayList&lt;Button>会声明带有Button类型元素的ArrayList。</p>
+</li>
+<li>
+<p>虽然ArrayList只能携带对象而不是primitive主数据类型，但编译器能够自动地将primitive主数据类型包装成Object以存放在ArrayList中。</p>
+</li>
+<li>
+<p>类用包来组织。</p>
+</li>
+<li>
+<p>类有完整的名称，那是由包的名称与类的名称所组成的。ArrayList事实上叫做java.util.ArrayList。</p>
+</li>
+<li>
+<p>除了java.lang之外，使用到其他包的类都需要指定全名。</p>
+</li>
+<li>
+<p>也可以在原始程序代码的最开始部分下import指令来说明所使用到的包。</p>
+</li>
+</ul>
+<h3 id="7"><a name="user-content-7" href="#7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>7.继承与多态</h3>
+<ul>
+<li>
+<p>子类是extends父类出来的。</p>
+</li>
+<li>
+<p>子类会继承父类所有public类型的实例变量和方法，但不会继承父类所有private类型的变量和方法。</p>
+</li>
+<li>
+<p>继承下来的方法可以被覆盖掉，但实例变量不能被覆盖掉。</p>
+</li>
+<li>
+<p>使用IS-A测试来验证继承结构的合理性。</p>
+</li>
+<li>
+<p>IS-A关系是单方向的，河马是动物，但动物不一定是河马。</p>
+</li>
+<li>
+<p>当某个方法在子类中被覆盖过，调用这个方法时会调用到覆盖过的版本。</p>
+</li>
+<li>
+<p>如果类Y是extends类X，且类Y是类Z的父类，则Z应该能通过IS-A X的测试。</p>
+</li>
+<li>
+<p>继承设计规则一：当某个类会比其父类更具有特定意义时使用继承。</p>
+</li>
+<li>
+<p>继承设计规则二：在行为程序（实现程序代码）应该被多个相同基本类型类所共享时，应该要考虑使用继承。</p>
+</li>
+<li>
+<p>继承设计规则三：若两者间的关系对于继承结构来说并不合理，则不要只是因为打算要重用其他类的程序代码而运用继承。</p>
+</li>
+<li>
+<p>继承设计规则四：如果两者间不能通过IS-A测试就不要应用继承关系。一定要确定子类是父类一种更特定的类型才可以。</p>
+</li>
+</ul>
+<h3 id="8"><a name="user-content-8" href="#8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>8.接口与多态</h3>
+<p><strong>要如何判断应该是设计类、子类、抽象类或接口呢？</strong></p>
+<blockquote>
+<p>如果新的类无法对其他的类通过IS-A测试时，就设计不继承其他类的类。</p>
+<p>只有在需要某类的特殊化版本时，以覆盖或增加新的方法来继承现有的类。</p>
+<p>当你需要定义一群子类的模板，又不想让程序员初始化此模板时，设计出抽象的类给它们用。</p>
+<p>如果想要定义出类可以扮演的角色，使用接口。</p>
+</blockquote>
+<ul>
+<li>
+<p>如果不想让某个类被初始化，就以abstract这个关键词将它标记为抽象的。</p>
+</li>
+<li>
+<p>抽象的类可以带有抽象和非抽象的方法。</p>
+</li>
+<li>
+<p>如果类带有抽象的方法，则此类必定标识为抽象的。</p>
+</li>
+<li>
+<p>抽象的方法没有内容，它的声明是以分号结束。</p>
+</li>
+<li>
+<p>抽象的方法必须在具体的类中运行。</p>
+</li>
+<li>
+<p>Java所有的类都是Object（java.lang.Object）直接或间接的子类。</p>
+</li>
+<li>
+<p>方法可以声明Object的参数或返回类型。</p>
+</li>
+<li>
+<p>不管实际上所引用的对象是什么类型，只有在引用变量的类型就是带有某方法的类型时才能调用该方法。</p>
+</li>
+<li>
+<p>Object引用变量在没有类型转换的情况下不能赋值给其他的类型，若堆上的对象类型与所要转换的类型不兼容，则此转换会在执行期产生异常。类型转换的例子：</p>
+</li>
+</ul>
+<pre class="codehilite"><code class="language-java">Dog d = (Dog) x.getObject(aDog);</code></pre>
+
+<li>
+<p>从ArrayList<Object>取出的对象只能被Object引用，不然就要用类型转换来改变。</p>
+</li>
+<li>
+<p>Java不允许多重继承，因为那样会有致命方块问题。</p>
+</li>
+<li>
+<p>接口就好像是100%纯天然抽象类。</p>
+</li>
+<li>
+<p>以interface这个关键词取代class来声明接口。</p>
+</li>
+<li>
+<p>实现接口时要使用implements这个关键词。例如：</p>
+</li>
+<pre class="codehilite"><code class="language-java">Dog implements Pet</code></pre>
+
+<li>
+<p>class可以实现多个接口。</p>
+</li>
+<li>
+<p>实现某接口的类必须实现它所有的方法，因为这些方法都是public与abstract的。</p>
+</li>
+<li>
+<p>要从子类调用父类的方法可以用super这个关键词来引用。例如：</p>
+</li>
+<pre class="codehilite"><code class="language-java">super.RunReport();</code></pre>
+
+
+<h3 id="9"><a name="user-content-9" href="#9" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>9.构造器与垃圾收集器</h3>
+
+<li>
+<p>我们关心栈与堆这两种内存空间。</p>
+</li>
+<li>
+<p>实例变量是声明在类中方法之外的地方。</p>
+</li>
+<li>
+<p>局部变量声明在方法或方法的参数上。</p>
+</li>
+<li>
+<p>所有局部变量都存在于栈上相对应的堆栈块中。</p>
+</li>
+<li>
+<p>对象引用变量与primitive主数据类型变量都是放在栈上。</p>
+</li>
+<li>
+<p>不管是实例变量或局部变量，对象本身都会在堆上。</p>
+</li>
+<li>
+<p>实例变量保存在所属的对象中，位于堆上。</p>
+</li>
+<li>
+<p>如果实例变量是个对对象的引用，则引用与对象都是在堆上。</p>
+</li>
+<li>
+<p>构造函数是个会在新建对象的时候执行的程序代码。</p>
+</li>
+<li>
+<p>构造函数必须与类同名且没有返回类型。</p>
+</li>
+<li>
+<p>你可以用构造函数来初始被创建对象的状态。</p>
+</li>
+<li>
+<p>如果你没有写构造函数，编译器会帮你安排一个。</p>
+</li>
+<li>
+<p>默认的构造函数是没有参数的。</p>
+</li>
+<li>
+<p>如果你写了构造函数，则编译器就不会调用。</p>
+</li>
+<li>
+<p>最好能有无参数的构造函数让人可以选择使用默认值。</p>
+</li>
+<li>
+<p>重载的构造函数意思是有超过一个以上的构造函数。</p>
+</li>
+<li>
+<p>重载的构造函数必须有不同的参数。</p>
+</li>
+<li>
+<p>两个构造函数的参数必须不同。</p>
+</li>
+<li>
+<p>实例变量有默认值，原始的默认值是 0/0.0/false，引用的默认值是 null。</p>
+</li>
+<h3 id="10"><a name="user-content-10" href="#10" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>10.数字与静态</h3>
+<li>
+<p>静态的方法应该采用类的名称来调用，而不是用对象引用变量。</p>
+</li>
+<li>
+<p>静态的方法可以直接调用而不需要堆上的实例。</p>
+</li>
+<li>
+<p>静态的方法是一个非常实用的方法，它不需要特别的实例变量值。</p>
+</li>
+<li>
+<p>静态的方法不能存取非静态的方法。</p>
+</li>
+<li>
+<p>如果类只有静态的方法，你可以将构造函数标记为private的以避免被初始化。</p>
+</li>
+<li>
+<p>静态变量为该变量所属类的成员所共享。静态变量只会有一份，而不是每个实例都有自己的一份。</p>
+</li>
+<li>
+<p>静态方法可以存取静态变量。</p>
+</li>
+<li>
+<p>在Java中的常量是把变量同时标记为static和final的。</p>
+</li>
+<li>
+<p>final的静态变量值必须在声明或静态初始化程序中赋值：</p>
+</li>
+<pre class="codehilite"><code class="language-java">static {
+  DOG_CODE = 420;
+}</code></pre>
+
+
+<li>
+<p>常量的命名惯例是全部使用大写字母。</p>
+</li>
+<li>
+<p>final 值一旦被赋值就不能更改。</p>
+</li>
+<li>
+<p>final 的方法不能被覆盖。</p>
+</li>
+<li>
+<p>final 的类不能被继承。​</p>
+</li>
+
+<h3 id="11"><a name="user-content-11" href="#11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>11.异常处理</h3>
+
+<li>
+<p>方法可在运行期间遇到问题时抛出异常。</p>
+</li>
+<li>
+<p>异常是Exception类型的对象。</p>
+</li>
+<li>
+<p>编译器不会注意RuntimeException类型的异常。RuntimeException不需要声明或被包在try/catch的块中（然而你还是可以这么做）。</p>
+</li>
+<li>
+<p>编译器所关心的是称为检查异常的异常。程序必须要认识有异常可能的存在。</p>
+</li>
+<li>
+<p>方法可以用throw关键词抛出异常对象：</p>
+</li>
+
+<pre class="codehilite"><code class="language-java">throw new FileIsTooSmallException();</code></pre>
+
+
+
+<li>
+<p>可能会抛出异常的方法必须声明成throws Exception。</p>
+</li>
+<li>
+<p>如果程序调用了有声明会抛出异常的方法，就得要告诉编译器已经注意到这件事。</p>
+</li>
+<li>
+<p>如果要处理异常状况，就把调用包在try/catch块中，并将异常处理/恢复程序放在catch块中。</p>
+</li>
+<li>
+<p>如果不打算处理异常，还是可以正式地将异常给ducking来通过编译。</p>
+</li>
+
+<h3 id="12"><a name="user-content-12" href="#12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>12.图形用户接口</h3>
+<p><strong>事件</strong></p>
+<li>GUI从创建window开始，通常会使用JFrame</li>
+<pre class="codehilite"><code class="language-java">JFrame frame = new JFrame();</code></pre>
+
+
+
+<li>你可以这样加入按钮、文字字段等组件：</li>
+
+<pre class="codehilite"><code class="language-java">frame.getContentPane().add(button);</code></pre>
+
+
+
+<li>
+<p>JFrame 与其他组件不同，不能直接加上组件，要用它的content pane。</p>
+</li>
+<li>
+<p>要显示window，你得指定尺寸和执行显示动作</p>
+</li>
+
+<pre class="codehilite"><code class="language-java">frame.setSize(300, 300);
+frame.setVisible(true);</code></pre>
+
+<li>
+<p>监听 GUI 事件才能知道用户对接口做了什么事情。</p>
+</li>
+<li>
+<p>你必须要对事件源注册所要监听的事件。事件源是一种会根据用户操作而触发事件的机制。</p>
+</li>
+<li>
+<p>监听接口让事件源能够调用给你。</p>
+</li>
+<li>
+<p>要对事件源注册就调用事件源的注册方法，它的方法一定是 add&lt;EventType>Listener 这种形式。以按钮的 ActionEvent 注册为例：</p>
+</li>
+<pre class="codehilite"><code class="language-java">button.addActionListener(this);</code></pre>
+
+
+
+<li>通过实现所有的事件处理方法来实现监听接口。对 ActionEvent 而言，方法可能像这样：</li>
+
+<pre class="codehilite"><code class="language-java">public void actionPerformed(ActionEvent event) {
+  button.setText(&quot;Clicked!&quot;);
+} </code></pre>
+
+
+
+<li>传递给事件处理方法的事件对象带有事件的信息，其中包括了事件源。</li>
+
+<p><strong>图形</strong></p>
+
+<li>
+<p>二维图形可以直接画在图形组件上。</p>
+</li>
+<li>
+<p>.gif 与 .jpeg 文件可以直接放在组件上。</p>
+</li>
+<li>
+<p>用 JPanel 的子类覆盖 paintComponent() 方法绘制自定义的图形。</p>
+</li>
+<li>
+<p>paintComponent() 方法会由 GUI 系统调用，你不可以自己调用。它的参数是个你不能自己创建的 Graphics 对象。</p>
+</li>
+<li>
+<p>Graphics 对象有些你可以调用的方法，像是：</p>
+</li>
+
+<pre class="codehilite"><code class="language-java">graphics.setColor(Color.blue);
+g.fillRect(20, 50, 100, 120);</code></pre>
+
+
+
+<li>使用 Image 来绘制 .jpg：</li>
+
+<pre class="codehilite"><code class="language-java">Image image = new ImageIcon(&quot;pic.jpg&quot;).getImage();
+g.drawImage(image, 3, 4, this);</code></pre>
+
+
+
+<li>
+<p>paintComponent() 的 Graphics 参数实际上是个 Graphics2D。</p>
+</li>
+<li>
+<p>调用 Graphics2D 的方法前，你必须把 Graphics 对象转换为 Graphics2D。</p>
+</li>
+
+<pre class="codehilite"><code class="language-java">Graphics2D g2d = (Graphics2D) g;</code></pre>
+
+
+<h3 id="13swing"><a name="user-content-13swing" href="#13swing" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>13.运用Swing</h3>
+
+<li>
+<p>布局管理器会控制嵌套在其他组件中组件的大小和位置。</p>
+</li>
+<li>
+<p>当某个组件加到背景组件上面时，被加入的组件是由背景组件的布局管理器管理的。</p>
+</li>
+<li>
+<p>布局管理器在做决定之前会询问组件的理想大小，并根据策略来决定采用哪些数据。</p>
+</li>
+<li>
+<p>BorderLayout 布局可以让你把组件加到五个区域上。你必须以下列语法来指定区域：</p>
+</li>
+
+<pre class="codehilite"><code class="language-java">add(BorderLayout.EAST, panel);</code></pre>
+
+
+
+<li>
+<p>BorderLayout 布局上的南北区域使用组件的理想高度而不管宽度，东西区域刚好相反，中间区域只能使用剩下的空间。</p>
+</li>
+<li>
+<p>pack() 方法会使 window 的大小符合内含组件的大小。</p>
+</li>
+<li>
+<p>FlowLayout 布局会由左至右，由上至下依加入的顺序来安置组件，若宽度超过时就会换行。</p>
+</li>
+<li>
+<p>FlowLayout 布局会让组件在长宽上都使用理想的尺寸大小。</p>
+</li>
+<li>
+<p>BoxLayout 布局让你可以垂直地排列组件，如同 FlowLayout 布局一样，它会让组件在长宽上都使用理想的尺寸大小。</p>
+</li>
+<li>
+<p>框架默认时使用 BoxLayout 布局，面板默认使用 FlowLayout 布局。</p>
+</li>
+<li>
+<p>可以调用 setLayout() 来改变面板的布局管理器。</p>
+</li>
+
+<h3 id="14"><a name="user-content-14" href="#14" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>14.保存对象</h3>
+
+<li>
+<p>你可以通过序列化来存储对象的状态。</p>
+</li>
+<li>
+<p>使用 ObjectOutputStream 来序列化对象(java.io)。</p>
+</li>
+<li>
+<p>Stream 是连接串流或是链接用的串流。</p>
+</li>
+<li>
+<p>连接串流用来表示源或目的地、文件、网络套接字连接。</p>
+</li>
+<li>
+<p>链接用串流来衔接连接串流。</p>
+</li>
+<li>
+<p>用 FileOutputStream 链接 ObjectOutputStream 来将对象序列化到文件上。</p>
+</li>
+<li>
+<p>调用 ObjectOutputStream 的 writeObject(theObject) 来将对象序列化，不需调用 FileOutputStream 的方法。</p>
+</li>
+<li>
+<p>对象必须实现序列化这个接口才能被序列化。如果父类实现序列化，则子类也就自动地有实现，而不管是否有明确的声明。</p>
+</li>
+<li>
+<p>当对象被序列化时，整个对象版图都会被序列化。这代表它的实例变量所引用的对象也会被序列化。</p>
+</li>
+<li>
+<p>如果有不能序列化的对象，执行期间就会抛出异常。</p>
+</li>
+<li>
+<p>除非该实例变量被标记为 transient。否则，该变量在还原的时候会被赋予 null 或 primitive 主数据类型的默认值。</p>
+</li>
+<li>
+<p>在解序列化时 (deserialization)，所有的类都必须能让 Java 虚拟机找到。</p>
+</li>
+<li>
+<p>读取对象的顺序必须与写入的顺序相同。</p>
+</li>
+<li>
+<p>readObject() 的返回类型是 Object，因此解序列化回来的对象还需要转换成原来的类型。</p>
+</li>
+<li>
+<p>静态变量不会被序列化，因为所有对象都是共享同一份静态变量值。</p>
+</li>
+<li>
+<p>用 FileWriter 这个连接串流来写入文本文件。</p>
+</li>
+<li>
+<p>将 FileWriter 链接到 BufferedWriter 可以提升效率。</p>
+</li>
+<li>
+<p>File 对象代表文件的路径而不是文件本身。</p>
+</li>
+<li>
+<p>你可以用 File 对象来创建、浏览和删除目录。</p>
+</li>
+<li>
+<p>用到 String 文件名的串流大部分都可以用 File 对象来代替 String。</p>
+</li>
+<li>
+<p>用 FileReader 来读取文本文件。</p>
+</li>
+<li>
+<p>将 FileReader 链接到 BufferedReader 可以提升效率。</p>
+</li>
+<li>
+<p>通常我们会使用特殊的字符来分隔文本数据中的不同元素。</p>
+</li>
+<li>
+<p>使用 split() 方法可以把 String 拆开，其中的分隔字符不会被当作数据来看待。</p>
+</li>
+
+<h3 id="15"><a name="user-content-15" href="#15" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>15.网络联机</h3>
+
+<li>
+<p>客户端与服务器的应用程序通过 Socket 连接来沟通。</p>
+</li>
+<li>
+<p>Socket 代表两个应用程序之间的连接，它们可能会是在不同的机器上执行的。</p>
+</li>
+<li>
+<p>客户端必须知道服务器应用程序的 IP 地址（或网域名称）和端口号。</p>
+</li>
+<li>
+<p>TCP 端口号是个 16 位的值，用来指定特定的应用程序。它能够让用户链接到服务器上各种不同的应用程序。</p>
+</li>
+<li>
+<p>从 0 ~ 1023 的端口号是保留给 HTTP、FTP、SMTP 等已知的服务。</p>
+</li>
+<li>
+<p>客户端通过建立 Socket 来连接服务器。</p>
+</li>
+
+<pre class="codehilite"><code class="language-java">Socket s = new Socket(&quot;127.0.0.1&quot;, 4200);</code></pre>
+
+
+
+<li><p>一旦建立了连接，客户端可以从 socket 取得低层串流。</p></li>
+
+<pre class="codehilite"><code class="language-java">sock.getInputStream();</code></pre>
+
+<li>
+<p>建立 BufferedReader 链接 InputStreamReader 与来自 Socket 的输入串流以读取服务器的文本数据。</p>
+</li>
+<li>
+<p>InputStreamReader 是个转换字节成字符的桥梁。它主要是用来链接 BufferedReader 与低层的 Socket 输入串流。</p>
+</li>
+<li>
+<p>建立直接链接 Socket 输出串流的 PrintWriter 请求 print() 方法或 println() 方法来送出 String 给服务器。</p>
+</li>
+<li>
+<p>服务器可以使用 ServerSocket 来等待用户对特定端口的请求。</p>
+</li>
+<li>
+<p>当 ServerSocket 接到请求时，它会做一个 Socket 连接来接受客户端的请求。</p>
+</li>
+<li>
+<p>以小写 t 描述的 thread 是个独立的线程。</p>
+</li>
+<li>
+<p>Java 中的每个线程都有独立的执行空间。</p>
+</li>
+<li>
+<p>大写 T 的 Thread 是 java.lang.Thread 这个类。它的对象是用来表示线程。</p>
+</li>
+<li>
+<p>Thread 需要任务，任务是实现过 Runnable 的实例。</p>
+</li>
+<li>
+<p>Runnable 这个接口只有一个方法。</p>
+</li>
+<li>
+<p>run() 会是新线程所执行的第一项方法。</p>
+</li>
+<li>
+<p>要把 Runnable 传给 Thread 的构造函数才能启动新的线程。</p>
+</li>
+<li>
+<p>线程在初始化以后还没有调用 start() 之前处于新建立的状态。</p>
+</li>
+<li>
+<p>调用 Thread 对象的 start() 之后，会建立出新的执行空间，它处于可执行状态等待被挑出来执行。</p>
+</li>
+<li>
+<p>当 Java 虚拟机的调度器选择某个线程之后它就处于执行中的状态，单处理器的机器只能有一个执行中的线程。</p>
+</li>
+<li>
+<p>有时线程会因为某些原因而被堵塞。</p>
+</li>
+<li>
+<p>调度不能保证任何的执行时间和顺序，所以你不能期待它会完全地平均分配执行，你最多也只能影响 sleep 的最小保证时间。</p>
+</li>
+<li>
+<p>Thread.sleep() 这个静态方法可以强制线程进入等待状态到过了设定时间为止，例如 Thread.sleep(200) 会睡上200个毫秒。</p>
+</li>
+<li>
+<p>可以调用 sleep() 让所有的线程都有机会运行。</p>
+</li>
+<li>
+<p>sleep() 方法可能会抛出 InterruptedException 异常，所以要包在 try/catch 块，或者把它也声明出来。</p>
+</li>
+<li>
+<p>你可以用 setName() 方法来帮线程命名，通常是用来除错的。</p>
+</li>
+<li>
+<p>如果两个或以上的线程存取堆上相同的对象可能会出现严重的问题。</p>
+</li>
+<li>
+<p>如果两个或两个以上的线程存取相同的对象可能会引发数据的损毁。</p>
+</li>
+<li>
+<p>要让对象在线程上有足够的安全性，就要判断出哪些指令不能被分割执行。</p>
+</li>
+<li>
+<p>使用 synchronized 这个关键词修饰符可以防止两个线程同时进入同一对象的同一方法。</p>
+</li>
+<li>
+<p>每个对象都有单一的锁，单一的钥匙。这只会在对象带有同步化方法时才有实际的用途。</p>
+</li>
+<li>
+<p>线程尝试要进入同步化过的方法时必须要取得对象的钥匙，如果因为已经被别的线程拿走了，那就得等。</p>
+</li>
+<li>
+<p>对象就算是有多个同步化过的方法，也还是只有一个锁。一旦某个线程进入该对象的同步化方法，其他线程就无法进入该对象上的任何同步化线程。</p>
+</li>
+
+<h3 id="16"><a name="user-content-15" href="#15" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>16.数据结构</h3>
+
+<li>
+  <p>调用单一参数的 sort(List o) 方法代表由 list 元素上的 compareTo() 方法来决定顺序。因此元素必须要实现 Comparable 这个接口。</p>
+</li>
+<li>
+  <p>调用 sort(List o, Comparator c) 方法代表不会调用 list 元素的 compareTo() 方法，而会使用 Comparator 的 compare() 方法。这意味着 list 元素不需要实现 Comparable。</p>
+</li>
+<li>
+  <p>数组的类型是在运行期间检查的，但集合的类型检查只会发生在编译期间。</p>
+</li>
+
+<h3 id="17"><a name="user-content-15" href="#15" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>17.发布程序</h3>
+
+<li>
+  <p>将项目组织一下以让源代码和类文件分开在不同的目录下。</p>
+</li>
+<li>
+  <p>标准的组织化结构是创建出项目目录，然后在其下建立 source 和 classes 目录。</p>
+</li>
+<li>
+  <p>将类以包来组织，并在前面加上域名称以防止命名冲突。</p>
+</li>
+<li>
+  <p>在程序源文件最前面加上包指令可以把类包进包中：</p>
+  <pre class="codehilite"><code class="language-java">package com.wickedlysmart;</code></pre>
+</li>
+<li>
+  <p>类必须待在完全相对应于包结构的目录中才能包进包中。以 com.wickedlysmart.Foo 来说，Foo 这个类必须放在 com 目录下 wickedlysmart 这个目录中。</p>
+</li>
+<li>
+  <p>要让编译过的类可以放在正确的包目录结构中，使用 -d 编译标识：</p>
+  <pre class="codehilite"><code class="language-java">%cd source
+%javac -d ../classes com/wickedlysmart/Foo.java</code></pre>
+</li>
+<li>
+  <p>切换到 classes 目录然后指定完整的类名称来执行程序：</p>
+  <pre class="codehilite"><code class="language-java">%java com.wickedlysmart.Foo</code></pre>
+</li>
+<li>
+  <p>你可以把类包进 JAR 中，它的格式是根据 pkzip 制作的。</p>
+</li>
+<li>
+  <p>将描述哪个类带有 main() 的 manifest 包进 JAR 中可以制作出可执行的 JAR 文件。manifest 文件是个带有像下面这样设定的文本文件，记得最后要换行才能保证正确：</p>
+  <pre class="codehilite"><code class="language-java">Main-Class: com.wickedlysmart.Foo</code></pre>
+</li>
+<li>
+  <p>用下面的命令格式来创建 JAR 文件：</p>
+  <pre class="codehilite"><code class="language-java">jar -cvmf manifest.txt MyJar.jar com</code></pre>
+</li>
+<li>
+  <p>JAR 中的结构必须完全符合包的目录结构。</p>
+</li>
+<li>
+  <p>以下面的命令格式类执行 JAR：</p>
+  <pre class="codehilite"><code class="language-java">java -jar MyJar.jar</code></pre>
+</li>
+<li>
+  <p>Java Web Start 技术让你能够从网站来部署独立的客户端程序。</p>
+</li>
+<li>
+  <p>Java Web Start 有个必须要安装在客户端的 helper app（当然也需要 Java）。</p>
+</li>
+<li>
+  <p>JWS 程序由两个部分组成：可执行的 JAR 与 .jnlp 文件。</p>
+</li>
+<li>
+  <p>.jnlp 文件是用来描述 JWS 应用程序的 XML 文件。它有 tag 以指定 JAR 的名称和位置，以及带有 main() 的类名称。</p>
+</li>
+<li>
+  <p>当浏览器从服务器上取得 .jnlp 文件时，浏览器就会启动 JWS 的 helper app。</p>
+</li>
+<li>
+  <p>JWS 的 helper app 会读取 .jnlp 来判断要从服务器上下载的可执行 JAR。</p>
+</li>
+<li>
+  <p>取得 JAR 之后它就会调用 .jnlp 指定的 main()。</p>
+</li>
+
+<h3 id="18"><a name="user-content-15" href="#15" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>18.分布式计算</h3>
+
+<li>
+	<p>在某堆上的对象无法进行另外堆上的对象引用。</p>
+</li>
+<li>
+	<p>Java Remote Method Invocation(RMI) 让你感觉上像是调用远程对象的方法，但其实不是。</p>
+</li>
+<li>
+	<p>当客户端调用远程对象的方法时，其实是调用代理上的方法，此代理被称为 stub。</p>
+</li>
+<li>
+	<p>stub 是个处理低层网络细节的辅助性对象，它会把方法的调用包装起来送到服务器上。</p>
+</li>
+<li>
+	<p>要创建远程服务的话，你就必须以远程接口来启动。</p>
+</li>
+<li>
+	<p>远程接口必须要 extend 过 java.rmi.Remote 这个接口，且所有的方法都必须声明 RemoteException。</p>
+</li>
+<li>
+	<p>你的远程服务会实现远程接口。</p>
+</li>
+<li>
+	<p>远程服务应该要继承 UnicastRemoteObject（技术上也有其他方法可以创建远程对象，但这是最简单的方式。</p>
+</li>
+<li>
+	<p>远程服务必须要声明 RemoteException 的构造函数（因为父类的构造函数声明了）。</p>
+</li>
+<li>
+	<p>远程服务的对象必须要向 RMI registry 注册。</p>
+</li>
+<li>
+	<p>使用静态的 Naming.rebind() 来注册远程服务。</p>
+</li>
+<li>
+	<p>RMI registry必须在同一台机器上与远程服务一块执行，且必须在对象的注册之前启动。</p>
+</li>
+<li>
+	<p>客户端会以 Naming.lookup() 查询远程服务。</p>
+</li>
+<li>
+	<p>几乎所有与 RMI 有关的都会抛出 RemoteException（由编译器检查）。</p>
+</li>
+<li>
+	<p>servlet 是完全在 HTTP 服务器上运行的 Java 程序。</p>
+</li>
+<li>
+	<p>servlet 用来处理与用户交互的网页程序。例如用户提交一些信息给服务器，servlet 就可以处理信息并把特定的结果以网页形式返回给用户。</p>
+</li>
+<li>
+	<p>你需要 servlet.jar 文件中的 servlet 相关包才能编译出 servlet。它不是标准函数库的一部分，所以需要从 java.sun.com 会 Web 服务器供货商处取得（事实上 Java 2 Enterprise Edition，也就是 J2EE 就带有 Servlet 函数库。</p>
+</li>
+<li>
+	<p>你必须要有支持 servlet 的 Web 服务器才能运行 servlet，比如 apache.org 的 Tomcat。</p>
+</li>
+<li>
+	<p>servlet 必须放在特定的位置才能执行，如果 Web 服务器是向 ISP 租借的，它会告诉你应该放在哪个目录。</p>
+</li>
+<li>
+	<p>一般的 servlet 是继承 HttpServlet 并覆盖 doGet() 和 doPost() 来创建的。</p>
+</li>
+<li>
+	<p>Web 服务器会根据用户的请求来启动并调用 servlet 上对应的方法。</p>
+</li>
+<li>
+	<p>servlet 可以通过 doGet() 的响应参数取得输出串流来组成响应的网页。</p>
+</li>
+<li>
+	<p>servlet 要输出带有完整标识的 HTML 网页。</p>
+</li>
+</article></body></html>
